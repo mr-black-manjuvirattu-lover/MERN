@@ -4,110 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <style>
+        #Internal{
+            color:blue;
+            background-color: burlywood;
+            display: inline;
+        }
+    </style>
 </head>
 <body>
-    <div class="Day">
-        <h1>Day 1</h1>
-        <div>
-            <h2>Version controller System</h2>
-            <p>A Version Control System (VCS) is a tool that helps track changes in code, documents, and files over time, allowing collaboration and rollback to previous versions when needed.</p>
-            <h5>Types of Version Controller System</h5>
-            <ol>
-                <li>Local Version Control</li>
+    <div>
+        <div class="Day">
+            <h1>Day 3</h1>
+            <div class="DayContent">
+                <p>What is CSS ?<br>It is used to style your respective page.</p>
+                <h5>Types of CSS</h5>
                 <ul>
-                    <li>Simple database stores file versions locally.</li>
-                    <li>Example: Backup copies with timestamps.</li>
+                    <li>Inline CSS</li>
+                    <p style="background-color: cadetblue;color: aqua;display: inline;">This is Inline</p>
+                    <li>Internal CSS</li>
+                    <p id="Internal">This is internal</p>
+                    <li>External CSS</li>
+                    <p id="External">this is External</p>
                 </ul>
-                <li>Centralized Version Control (CVCS)</li>
+                <h5>Types of Selector</h5>
                 <ul>
-                    <li>A single central server holds all versions.</li>
-                    <li>Developers check out and commit changes to this server.</li>
+                    <li>id #</li>
+                    <li>class .</li>
+                    <li>attributes or tag (a,p,li,ul,...)</li>
                 </ul>
-                <li>Distributed Version Control (DVCS) (Most Popular)</li>
-                <ul>
-                    <li>Every developer has a full copy of the repository.</li>
-                    <li>Allows working offline and merging branches easily.</li>
-                </ul>
-            </ol>
-        </div>
-        <div class="DayContent">
-            <h2>Git</h2>
-            <p>Git is a tool to maintain the file/folder using commands and control the version of the site</p>
-            <h5>Commands</h5>
-            <ol>
-                <li>git init (or) git clone RepoURL</li>
-                <li>git add file.name</li>
-                <li>git commit</li>
-                <li>git push origin main</li>
-                <li>git pull</li>
-                <li>git status</li>
-                <li>git checkout -b NewBranchName</li>
-                <li>git branch</li>
-            </ol>
-        </div>
-    </div>
-    <div class="">
-        <h1>Day 2</h1>
-        <div class="DayContent">
-            <p>What is HTML ?<br>The abbreviation of HTML is HyperText Markup Language and it is known for design the <strong>structure of the Site</strong>.</p>
-            <h5>Types of HTML</h5>
-            <ol>
-                <li>Vannilla HTML or Pure HTML</li>
-                <li>HTML5</li>
-                <li>HTML:Xml</li>
-            </ol>
-            <h5>Tags</h5>
-            <ul>
-                <li>html</li>
-                <li>head</li>
-                <li>body</li>
-                <li>title</li>
-                <li>h1-h6(h7)</li>
-                <h1>h1 tag</h1>
-                <h2>h2 tag</h2>
-                <h3>h3 tag</h3>
-                <h4>h4 tag</h4>
-                <h5>h5 tag</h5>
-                <h6>h6 tag</h6>
-                <li>p</li>
-                <p>This is from paragraph tag</p>
-                <li>break</li>
-                <br>
-                <li>horizontal line</li>
-                <hr>
-                <li>anchor</li>
-                <a href="hello"> this is anchor tag</a>
-                <li>span</li>
-                <span>this is from span</span>
-                <li>image</li>
-                <img src="Images/download.jpeg" alt="This img tag example">
-                <li>marquee</li>
-                <marquee behavior="scroll" direction="Right">This is marque</marquee>
-                <li>table(th,tr)</li>
-                <table border="1">
-                    <tr>
-                        <th>Name</th>
-                        <th>Favourite</th>
-                    </tr>
-                    <tr>
-                        <td>kabi</td>
-                        <td>anime</td>
-                    </tr>
-                    <tr>
-                        <td>jeba</td>
-                        <td>cartoon</td>
-                    </tr>
-                </table>
-                <li>Forms</li>
-                <form action="receive.html">
-                    <label for="Name">Name</label>
-                    <input type="text" value="" placeholder="Enter Name">
-                    <label for="Favourite">Favourite</label>
-                    <input type="text" value="" placeholder="Enter Favourite">
-                    <button>Submit</button>
-                </form>
-            </ul>
-            
+            </div>
         </div>
     </div>
 </body>
