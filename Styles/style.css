@@ -3,3 +3,17 @@
     background-color: darkcyan;
     display: inline;
 }
+.Fixed-Position{
+    position: fixed;
+}
+.Box{
+    color: blue;
+    background-color: gold;
+    height: 100px;
+    width:100%;
+    margin: 20px;
+    border: solid 10px;
+    border-color:fuchsia ;
+    padding-top: 5%;
+    text-align: center;
+}
