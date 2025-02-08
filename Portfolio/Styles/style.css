@@ -1,0 +1,14 @@
+.nav-container{
+    height: 50px;
+    width: auto;
+    background-color: aqua;
+    margin: 10px;
+    border:10px;
+    border-color: black;
+    display: flex;
+}
+.nav-elements{
+    list-style: none;
+    display: flex;
+    background-color: rgba(98, 235, 103, 0.304);
+}
