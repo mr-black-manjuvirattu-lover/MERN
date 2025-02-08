@@ -6,6 +6,12 @@
 .Fixed-Position{
     position: fixed;
 }
+.Relative-Position{
+    position: relative;
+}
+.Absolute-Position{
+    position: absolute;
+}
 .Box{
     color: blue;
     background-color: gold;
