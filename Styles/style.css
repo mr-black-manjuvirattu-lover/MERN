@@ -1,25 +1,8 @@
-#External{
-    color: darkred;
-    background-color: darkcyan;
-    display: inline;
+.float-right{
+    float: right;
+    margin: 10px;
 }
-.Fixed-Position{
-    position: fixed;
-}
-.Relative-Position{
-    position: relative;
-}
-.Absolute-Position{
-    position: absolute;
-}
-.Box{
-    color: blue;
-    background-color: gold;
-    height: 100px;
-    width:100%;
-    margin: 20px;
-    border: solid 10px;
-    border-color:fuchsia ;
-    padding-top: 5%;
-    text-align: center;
+.float-left{
+    float:left;
+    margin: 10px;
 }
