@@ -1,8 +1,16 @@
-input{
-    border:1px solid coral;
-    border-radius: 30px;
+.para {
+    font-size: 2rem; 
+    line-height: 1.5;
 }
-input[type=number]{
-    border:1px solid rgb(81, 239, 8);
-    border-radius: 30px;
+.Pos-Fix {
+    position: fixed;
+    right: 10px;
+    background: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+}
+.Pos-Stick {
+    position: sticky;
+    top: 0;
+    background: white; 
 }
