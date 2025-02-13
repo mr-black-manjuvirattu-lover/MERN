@@ -1,16 +1,14 @@
-.para {
-    font-size: 2rem; 
-    line-height: 1.5;
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: blanchedalmond;
+    padding: 30px;
 }
-.Pos-Fix {
-    position: fixed;
-    right: 10px;
-    background: lightgray;
-    padding: 10px;
-    border-radius: 5px;
-}
-.Pos-Stick {
-    position: sticky;
-    top: 0;
-    background: white; 
+.grid{
+    background-color: aqua;
+    text-align: center;
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+
 }
