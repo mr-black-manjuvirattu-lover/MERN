@@ -1,5 +1,5 @@
 .nav-container{
-    height: 50px;
+    height: 60px;
     width: auto;
     background-color: aqua;
     margin: 0px;
@@ -9,16 +9,25 @@
     padding: 10px;
 }
 .nav-elements{
+    margin-left: 50px;
     list-style: none;
     display: flex;
-    background-color: rgba(98, 235, 103, 0.304);
+    margin-left: 710px;
    
 }
 li{
     display: inline;
-    padding: 30px;
+    padding: 20px;
+    font-size: 2rem;
+    border-radius: 20px;
+}
+li:hover{
+    background-color: azure;
 }
 .name{
     display: inline;
 }
-
+a{
+    text-decoration: none;
+    text-decoration-color: none;
+}
