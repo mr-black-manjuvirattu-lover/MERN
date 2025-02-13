@@ -2,13 +2,23 @@
     height: 50px;
     width: auto;
     background-color: aqua;
-    margin: 10px;
-    border:10px;
-    border-color: black;
+    margin: 0px;
+    border:0px;
+    border-color:solid black;
     display: flex;
+    padding: 10px;
 }
 .nav-elements{
     list-style: none;
     display: flex;
     background-color: rgba(98, 235, 103, 0.304);
+   
 }
+li{
+    display: inline;
+    padding: 30px;
+}
+.name{
+    display: inline;
+}
+
