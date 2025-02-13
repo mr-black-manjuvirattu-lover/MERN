@@ -5,22 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
     <link rel="stylesheet" href="Styles/style.css">
+    <style>
+        .transition{
+            color: dimgray;
+            background-color: aqua;
+            transition:background-color 5s,padding 5s, width 5s, height 5s, transform 11s ,opacity 2s ;
+            opacity: 1;
+        }
+        .transition:hover{
+            background-color: dimgray;
+            color: aqua;
+            padding: 30px;
+            height:300px;
+            width: 300px;
+            transform: rotate(360deg);
+            opacity: 0.1;
+        }
+        @keyframes animeDiv{
+            /* from:{
+                background-color: beige;
+            }
+            to{
+                background-color: aqua;
+            } */
+             0%{
+                opacity: 1;
+             }
+             25%{
+                opacity: 0.75;
+             }
+             50%{
+                opacity: 0.5;
+             }
+             75%{
+                opacity: 0.25;
+             }
+             100%{
+                opacity: 1;
+             }
+        }
+        .animation{
+            animation: animeDiv;
+            background-color: beige;
+            width: 100px;
+            height: 100px;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="grid"><img src="Images/download.jpeg" alt="">1</div>
-        <div class="grid"><img src="Images/download.jpeg" alt="">2</div>
-        <div class="grid"><img src="Images/download.jpeg" alt="">3</div>
-        <div class="grid"><img src="Images/download.jpeg" alt="">4</div>
-        <div class="grid"><img src="Images/download.jpeg" alt="">5</div>
-        <div class="grid"><img src="Images/download.jpeg" alt="">6</div>
-        <div class="grid"><img src="Images/download.jpeg" alt="">7</div>
-        <div class="grid"><img src="Images/download.jpeg" alt="">8</div>
-        <div class="grid"><img src="Images/download.jpeg" alt="">9</div>
-        <div class="grid"><img src="Images/download.jpeg" alt="">10</div>
-        <div class="grid"><img src="Images/download.jpeg" alt="">11</div>
-        <div class="grid"><img src="Images/download.jpeg" alt="">12</div>
-    </div>
-    
+    <h1 class="transition">This is transition example</h1>
+    <h1>This is animation</h1>
+    <div class="animation">Animation</div>
 </body>
 </html>
