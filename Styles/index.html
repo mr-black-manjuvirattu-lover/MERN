@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            color: aqua;
+            background-color: blueviolet;
+            position: relative;
+            font-size: 3em;
+        }
+        .two{
+            color: brown;
+            background-color: cadetblue;
+            position: absolute;
+            display: none;
+        }
+        .one:hover .two{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        hi this si
+        <div class="two">
+            this is hidden
+        </div>
+    </div>
+</body>
+</html>
