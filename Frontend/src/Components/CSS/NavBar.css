@@ -25,3 +25,6 @@ li:hover{
 .drop:hover .drag{
     display: block;
 }
+a{
+    text-decoration: none;
+}
