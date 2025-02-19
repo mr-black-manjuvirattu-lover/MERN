@@ -18,3 +18,10 @@ li:hover{
     background-color: chartreuse;
     border-radius: 20px;
 }
+.drag{
+    position: relative;
+    display: none;
+}
+.drop:hover .drag{
+    display: block;
+}

@@ -7,6 +7,8 @@ import Login from "./Components/FunctionalComponent/Login"
 import Signup from "./Components/FunctionalComponent/Signup"
 import Home from "./Components/FunctionalComponent/Home"
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import UseEffect from "./Components/FunctionalComponent/useEffect"
+
 function App() {
   
   return (
@@ -20,6 +22,7 @@ function App() {
               <Route path='/' element={<Home properties="Hello, " sjit="SJIT" welcome="welcome"/>}></Route>
               <Route path='/about' element={<About/>}></Route>
               <Route path='/gallery' element={<Gallery/>}></Route>
+              <Route path='/useeffect' element={<UseEffect/>}></Route>
               <Route path='/contact' element={<Contact/>}></Route>
               <Route path='/signup' element={<Signup/>}></Route>
               <Route path='/login' element={<Login/>}></Route>
