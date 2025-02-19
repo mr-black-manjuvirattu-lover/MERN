@@ -10,8 +10,9 @@ function App() {
   
   return (
     <>
-      <NavBar/>
+    
       <ClassComp/>
+      <NavBar/>
       <About/><hr />
       <Gallery/><hr />
       <Contact/><hr />
