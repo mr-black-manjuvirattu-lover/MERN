@@ -6,19 +6,28 @@ import Contact from "./Components/FunctionalComponent/Contact"
 import Login from "./Components/FunctionalComponent/Login"
 import Signup from "./Components/FunctionalComponent/Signup"
 import Home from "./Components/FunctionalComponent/Home"
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
 function App() {
   
   return (
     <>
-    
-      <ClassComp/>
-      <NavBar/>
-      <About/><hr />
-      <Gallery/><hr />
-      <Contact/><hr />
-      <Login/><hr />
-      <Signup/><hr />
-      <Home properties="Hello, " sjit="SJIT" welcome="welcome"/><hr />
+      <div>
+        <ClassComp/>
+        <main>
+          <BrowserRouter>
+            <NavBar/>
+            <Routes>
+              <Route path='/' element={<Home properties="Hello, " sjit="SJIT" welcome="welcome"/>}></Route>
+              <Route path='/about' element={<About/>}></Route>
+              <Route path='/gallery' element={<Gallery/>}></Route>
+              <Route path='/contact' element={<Contact/>}></Route>
+              <Route path='/signup' element={<Signup/>}></Route>
+              <Route path='/login' element={<Login/>}></Route>
+            </Routes>
+          </BrowserRouter>
+        </main>
+        
+      </div>
     </>
   )
 }

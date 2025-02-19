@@ -1,9 +1,16 @@
 import React from 'react'
 
 class ClassComp extends React.Component{
-  render(){
+  render(){ 
+    var styling={
+        textAlign:"center",
+        backgroundColor:"blue",
+        color:"white"
+    }
     return(
-        <h1>Welcome To FrontEnd</h1>
+        <div>
+          <h1 style={styling}>Welcome</h1>
+        </div>
     )
   }
 }
