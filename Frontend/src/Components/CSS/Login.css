@@ -1,0 +1,22 @@
+form{
+    position: relative;
+    display: flex;
+    place-content: center;
+
+}
+.Container{
+    height: 200px;
+    margin-top: 150px;
+    width: 250px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+}
+button{
+    color: black;
+    background-color: rgb(60, 60, 230);
+    border-radius: 10px;
+    padding: 5px;
+}
+input{
+    padding: 10px 5px;
+}
