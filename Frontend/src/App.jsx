@@ -10,7 +10,7 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import UseEffect from "./Components/FunctionalComponent/Hooks/UseEffect"
 import UseEffectAPI from "./Components/FunctionalComponent/Hooks/UseEffectAPI"
 import UseRef from "./Components/FunctionalComponent/Hooks/UseRef"
-import UseMemo from "./Components/FunctionalComponent/Hooks/useMemo"
+import UseMemo from "./Components/FunctionalComponent/Hooks/UseMemo"
 
 
 function App() {
