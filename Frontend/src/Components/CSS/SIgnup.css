@@ -5,9 +5,9 @@ form{
 }
 .Container{
     margin-top: 150px;
-    height: 200px;
+    height: 270px;
     width: 250px;
-    background-color: cornflowerblue;
+    background-color: rgb(252, 203, 244);
     padding: 20px;
     border-radius: 10px;
 }
@@ -16,7 +16,7 @@ input{
 }
 button{
     color: black;
-    background-color: rgb(60, 60, 230);
+    background-color: rgb(146, 254, 152);
     border-radius: 10px;
     padding: 5px;
     font-size: medium;
