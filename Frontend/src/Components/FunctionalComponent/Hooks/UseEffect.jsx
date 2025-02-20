@@ -3,7 +3,6 @@ import React,{useEffect, useState} from 'react'
 const UseEffect = () => {
     const[text,setText]=useState("hi");
     useEffect(()=>{
-        console.log(text)
     },[])
   return (
     <div>
