@@ -9,7 +9,7 @@ const Login = () => {
         Name : <input type="text" required/>
         Password : <input type="text" required/>
         <button>Login</button>
-        <p>Not Have aAccount?<Link to='/signup'>Signup</Link></p>
+        <p>Not Have an Account?<Link to='/signup'>Signup</Link></p>
       </div>
       
     </form>
