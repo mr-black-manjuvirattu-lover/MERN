@@ -7,7 +7,7 @@ import Login from "./Components/FunctionalComponent/Login"
 import Signup from "./Components/FunctionalComponent/Signup"
 import Home from "./Components/FunctionalComponent/Home"
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import UseEffect from "./Components/FunctionalComponent/Hooks/useEffect"
+import UseEffect from "./Components/FunctionalComponent/Hooks/UseEffect"
 import UseEffectAPI from "./Components/FunctionalComponent/Hooks/UseEffectAPI"
 import UseRef from "./Components/FunctionalComponent/Hooks/UseRef"
 import UseMemo from "./Components/FunctionalComponent/Hooks/useMemo"
