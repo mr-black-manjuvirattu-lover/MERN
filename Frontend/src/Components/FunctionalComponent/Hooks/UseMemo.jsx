@@ -13,7 +13,7 @@ const UseMemo = () => {
         backgroundColor:theme?"black":"white",
         color:theme?"white":"black"
     }
-    var doubleUpNumber=useMemo((r)=>{
+    var doubleUpNumber=useMemo(()=>{
         return slowFunction(number)
     },[number])
 
