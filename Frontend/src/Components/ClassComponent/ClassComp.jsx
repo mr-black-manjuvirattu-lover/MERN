@@ -5,7 +5,9 @@ class ClassComp extends React.Component{
     var styling={
         textAlign:"center",
         backgroundColor:"blue",
-        color:"white"
+        color:"white",
+        margin:0,
+        padding:"10px"
     }
     return(
         <div>

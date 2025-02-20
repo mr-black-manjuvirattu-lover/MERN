@@ -11,13 +11,18 @@ const NavBar = () => {
                 <li><Link to='/about'>About</Link></li>
                 <li><Link to='/gallery'>Gallery</Link></li>
                 <div className='dropDown' onMouseEnter={()=>setDrop(true)} onMouseLeave={()=>setDrop(false)}>
-                  <span>Hooks</span>
-                  <ol className='drag'>
+                  <span className='link'>Hooks</span>
+                  {
+                    drop&&(<ol className='drag'>
                     <li>UseState</li>
                     <li><Link to='/useeffect'>UseEffect</Link></li>
                     <li><Link to='/useeffectAPI'>UseEffectAPI</Link></li>
                     <li><Link to='/useref'>UseRef</Link></li>
+                    <li><Link to='/usememo'>UseMemo</Link></li>
                   </ol>
+                    )
+                  }
+                  
                 </div>
                 <li><Link to='/contact'>Contact</Link></li>
                 <li><Link to='/login'>Login</Link></li>

@@ -10,6 +10,7 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import UseEffect from "./Components/FunctionalComponent/Hooks/useEffect"
 import UseEffectAPI from "./Components/FunctionalComponent/Hooks/UseEffectAPI"
 import UseRef from "./Components/FunctionalComponent/Hooks/UseRef"
+import UseMemo from "./Components/FunctionalComponent/Hooks/useMemo"
 
 function App() {
   
@@ -30,6 +31,7 @@ function App() {
               <Route path='/login' element={<Login/>}></Route>
               <Route path='/useeffectAPI' element={<UseEffectAPI/>}></Route>
               <Route path="/useref" element={<UseRef/>}></Route>
+              <Route path="/usememo" element={<UseMemo/>}></Route>
             </Routes>
           </BrowserRouter>
         </main>

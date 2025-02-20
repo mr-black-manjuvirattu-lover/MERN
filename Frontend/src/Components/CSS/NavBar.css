@@ -1,7 +1,4 @@
-body{
-    margin: 0;
-    padding: 0;
-}
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -19,9 +16,12 @@ nav li:hover{
     border-radius: 20px;
 }
 .drag{
-    position: relative;
-    cursor: pointer;
-    display: none;
+    position: absolute;
+    background-color: rgb(240, 243, 242);
+    margin-top: 5px;
+    z-index: 1;
+    
+
 }
 .drop:hover .drag{
     display: block;
