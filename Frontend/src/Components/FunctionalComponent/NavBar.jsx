@@ -19,11 +19,14 @@ const NavBar = () => {
                     <li><Link to='/useeffectAPI'>UseEffectAPI</Link></li>
                     <li><Link to='/useref'>UseRef</Link></li>
                     <li><Link to='/usememo'>UseMemo</Link></li>
+                    <li><Link to='/usecallback'>UseCallback</Link></li>
+                    <li><Link to='/usememorize'>UseMemorize</Link></li>
                   </ol>
                     )
                   }
                   
                 </div>
+                <li><Link to='/hoc' className='link'>Hoc</Link></li>
                 <li><Link to='/contact'>Contact</Link></li>
                 <li><Link to='/login'>Login</Link></li>
                 <li><Link to='/signup'>Signup</Link></li>
