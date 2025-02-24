@@ -15,7 +15,8 @@ import UseCallback from "./Components/FunctionalComponent/Hooks/UseCallback"
 import UseMemorize from "./Components/FunctionalComponent/Hooks/UseMemorize"
 import HoC from "./Components/FunctionalComponent/HoC/HoC"
 import CoE from "./Components/FunctionalComponent/CoE.jsx";
-// import LazyLoadingAndSuspense from "./components/FunctionalComponents/Memoization/LazyLoadingAndSuspense.jsx";
+import LazyLoadingAndSuspense from "./Components/FunctionalComponent/Memoization/LazyLoadingAndSuspense.jsx";
+import Memo from "./Components/FunctionalComponent/Memoization/Memo.jsx";
 function App() {
   
   return (
@@ -39,7 +40,8 @@ function App() {
               <Route path="/usememo" element={<UseMemo/>}></Route>
               <Route path="/usecallback" element={<UseCallback/>}></Route>
               <Route path="/usememorize" element={<UseMemorize/>}></Route>
-              {/* <Route path="/lazy" element= {<LazyLoadingAndSuspense />} /> */}
+              <Route path="/memo" element= {<Memo/>} />
+              <Route path="/lazy" element= {<LazyLoadingAndSuspense />} />
               <Route path="/res" element={<CoE/>} />
 
             </Routes>
