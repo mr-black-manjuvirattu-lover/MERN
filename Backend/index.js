@@ -1,6 +1,7 @@
 const express=require('express')
 const mdb =require("mongoose")
 const dotenv=require("dotenv")
+const bcrypt=require("bcrypt")
 const Signup=require("./models/SignupSchema")
 const app =express()
 app.use(express.json())
@@ -21,17 +22,18 @@ mdb.connect(process.env.MONGODB_URL).then(()=>{
    res.send("<h1>this is from About</h1>")
 })
 
-app.post("/signup",(req,res)=>{
+app.post("/signup", async (req,res)=>{
    try{
       const {FirstName,LastName,Email,Password,PhoneNumber}=req.body
+      const hashedPassword= await bcrypt.hash(Password,10)
       const newSignup =new Signup({
          FirstName:FirstName,
          LastName:LastName,
          Email:Email,
-         Password:Password,
+         Password:hashedPassword,
          PhoneNumber:PhoneNumber
       });
-      newSignup.save();
+      await newSignup.save();
       
       console.log("Signup Successful");
       res.status(201).json({message: "Signup Successful",isSignup:true})
