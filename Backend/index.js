@@ -22,6 +22,36 @@ mdb.connect(process.env.MONGODB_URL).then(()=>{
    res.send("<h1>this is from About</h1>")
 })
 
+app.get("/getsignupdet",async (req,res)=>{
+   const signup=await Signup.find()
+   console.log(signup)
+   res.send("Signup fetched")
+})
+
+app.post("/login",async (req,res)=>{ 
+   try{
+      const {Email,Password}=req.body
+      const existingUser =await Signup.findOne({Email:Email})
+      console.log(existingUser)
+      if(existingUser){
+         console.log("entered")
+         const isValidPassword=await bcrypt.compare(Password,existingUser.Password)
+         console.log(isValidPassword)
+         if(isValidPassword){
+            res.status(201).json({message:"Login Successfully",isLoggedin:true})
+         }else{
+            res.status(201).json({message:"enter Valid Password",isLoggedin:false})
+         }
+      }else{
+         res.status(201).json({message:"User Not Found",isLoggedin:false})
+      }
+   }catch(error){
+      console.log("error occured")
+   }
+})
+
+
+
 app.post("/signup", async (req,res)=>{
    try{
       const {FirstName,LastName,Email,Password,PhoneNumber}=req.body
