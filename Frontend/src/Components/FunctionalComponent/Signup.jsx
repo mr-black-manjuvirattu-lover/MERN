@@ -15,7 +15,7 @@ const Signup = () => {
 
   const handleSignup= async (e)=>{
     e.preventDefault()
-    const req=await axios.post("http://localhost:5001/signup",{
+    const req=await axios.post("https://mern-1nqn.onrender.com/signup",{
       FirstName:FirstName,
       LastName:LastName,
       Email:Email,
