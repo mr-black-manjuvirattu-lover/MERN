@@ -21,7 +21,6 @@ const Signup = () => {
       Email:Email,
       Password:Password,
       PhoneNumber:PhoneNumber
-      
     })
     
     const message=req.data.message

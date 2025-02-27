@@ -5,7 +5,14 @@ const bcrypt=require("bcrypt")
 const Signup=require("./models/SignupSchema")
 const cors=require("cors")
 const app =express()
-app.use(cors())
+
+const corsOptions={
+   origin: ['https://mern-mu-three.vercel.app/', 'http://localhost:5173'],
+   methods: ['GET', 'POST'],
+   allowedHeaders: ['Content-Type', 'Authorization'],
+};
+
+app.use(cors(corsOptions))
 app.use(express.json())
 dotenv.config()
 
